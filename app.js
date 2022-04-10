@@ -5,7 +5,7 @@ app.get('', (req, res) => {
     res.sendFile(__dirname + '/resume.html')
 })
 
-const PORT = 8888 || process.env.PORT
+const PORT = process.env.PORT || 8888 
 app.listen(PORT, () => {
     console.log('server is running on port ' + PORT )
 })
